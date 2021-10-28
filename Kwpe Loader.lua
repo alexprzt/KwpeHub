@@ -1,4 +1,4 @@
-local URL = "https://solarishub.dev/games"
+local URL = "https://github.com/alexprzt/KwpeHub/blob/main/"
 
 local games = {
     [891852901] = "Greenville",
@@ -10,4 +10,4 @@ end
 
 local name = games[game.PlaceId] or games[game.GameId]
 
-return loadstring(game:HttpGet(URL .. "/" .. (name or "Universal") .. ".lua", true))()
+return loadstring(game:HttpGet(URL .. name .. ".lua"))
